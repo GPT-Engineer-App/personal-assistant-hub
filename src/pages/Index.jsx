@@ -13,7 +13,6 @@ const Index = () => {
     <div className="h-screen w-screen flex flex-col">
       <header className="bg-gray-800 text-white p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
         <div className="flex items-center">
-          <img src="/path/to/logo.png" alt="In&Valid Logo" className="h-8 mr-2" />
           <h1 className="text-xl font-bold">In&Valid</h1>
         </div>
         <nav className="space-x-6">
