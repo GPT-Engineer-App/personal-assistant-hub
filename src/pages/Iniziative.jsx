@@ -32,6 +32,9 @@ const Iniziative = () => {
             <h2 className="text-xl font-semibold">Iniziative</h2>
             <p>Explore various initiatives and programs designed to support and empower individuals with disabilities.</p>
           </div>
+          <div className="mt-4">
+            <Button variant="primary">Create New Initiative</Button>
+          </div>
         </div>
       </div>
     </div>
