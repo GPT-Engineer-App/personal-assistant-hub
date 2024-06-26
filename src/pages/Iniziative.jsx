@@ -45,20 +45,20 @@ const Iniziative = () => {
               <DialogTrigger asChild>
                 <Button variant="primary">Create New Initiative</Button>
               </DialogTrigger>
-              <DialogContent>
+              <DialogContent className="max-h-[80vh] overflow-y-auto p-4">
                 <DialogHeader>
                   <DialogTitle>Create New Initiative</DialogTitle>
                 </DialogHeader>
-                <form className="space-y-4">
-                  <div>
+                <form className="space-y-4 p-4">
+                  <div className="space-y-2">
                     <Label htmlFor="title">Title of the Initiative</Label>
                     <Input id="title" placeholder="Enter the title" />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="description">Detailed Description</Label>
                     <Textarea id="description" placeholder="Enter the detailed description" />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="category">Category</Label>
                     <Select>
                       <SelectTrigger>
@@ -74,39 +74,39 @@ const Iniziative = () => {
                       </SelectContent>
                     </Select>
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="start-date">Start Date</Label>
                     <Calendar id="start-date" />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="end-date">End Date</Label>
                     <Calendar id="end-date" />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="location">Location</Label>
                     <Input id="location" placeholder="Enter the location" />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="organizer">Organizer</Label>
                     <Input id="organizer" placeholder="Enter the organizer's name" />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="organizer-contact">Organizer Contact Information</Label>
                     <Input id="organizer-contact" placeholder="Enter the contact information" />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="benefits">Benefits Offered</Label>
                     <Textarea id="benefits" placeholder="Enter the benefits offered" />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="eligibility">Eligibility Requirements</Label>
                     <Textarea id="eligibility" placeholder="Enter the eligibility requirements" />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="caregiver-discount">Caregiver Discount (if applicable)</Label>
                     <Input id="caregiver-discount" placeholder="Enter the caregiver discount" />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Label htmlFor="supporting-docs">Supporting Documentation</Label>
                     <Input id="supporting-docs" type="file" />
                   </div>
