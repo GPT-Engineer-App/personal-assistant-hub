@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { FaRegBuilding, FaRegHandshake, FaRegHeart, FaRegLightbulb, FaRegBriefcase } from "react-icons/fa";
 
 const testimonials = [
   {
@@ -51,35 +52,50 @@ const Servizi = () => {
         <Input placeholder="Search services..." className="mb-4" />
         <Accordion type="single" collapsible>
           <AccordionItem value="public-initiatives">
-            <AccordionTrigger>Public Initiatives</AccordionTrigger>
+            <AccordionTrigger>
+              <FaRegBuilding className="mr-2" />
+              Public Initiatives
+            </AccordionTrigger>
             <AccordionContent>
               <p>Access to information and services related to public benefits, including disability allowances, bonuses, and other government-provided support.</p>
               <Button variant="outline" className="mt-2">Learn More</Button>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="private-initiatives">
-            <AccordionTrigger>Private Initiatives</AccordionTrigger>
+            <AccordionTrigger>
+              <FaRegHandshake className="mr-2" />
+              Private Initiatives
+            </AccordionTrigger>
             <AccordionContent>
               <p>Information and access to private sector initiatives such as cultural events, sports activities, hospitality services, and transportation options that cater to people with disabilities.</p>
               <Button variant="outline" className="mt-2">Learn More</Button>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="counseling-support">
-            <AccordionTrigger>Counseling and Psychological Support</AccordionTrigger>
+            <AccordionTrigger>
+              <FaRegHeart className="mr-2" />
+              Counseling and Psychological Support
+            </AccordionTrigger>
             <AccordionContent>
               <p>Access to counseling services and psychological support to help individuals cope with their disabilities and improve their mental well-being.</p>
               <Button variant="outline" className="mt-2">Learn More</Button>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="training-education">
-            <AccordionTrigger>Training and Education</AccordionTrigger>
+            <AccordionTrigger>
+              <FaRegLightbulb className="mr-2" />
+              Training and Education
+            </AccordionTrigger>
             <AccordionContent>
               <p>Resources and opportunities for training and educational programs to enhance skills and knowledge, tailored specifically for people with disabilities.</p>
               <Button variant="outline" className="mt-2">Learn More</Button>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="employment-access">
-            <AccordionTrigger>Employment Access</AccordionTrigger>
+            <AccordionTrigger>
+              <FaRegBriefcase className="mr-2" />
+              Employment Access
+            </AccordionTrigger>
             <AccordionContent>
               <p>Assistance with finding and applying for jobs, including job listings, resume building, and interview preparation, aimed at improving employment opportunities for people with disabilities.</p>
               <Button variant="outline" className="mt-2">Learn More</Button>
