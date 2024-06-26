@@ -16,11 +16,11 @@ const Iniziative = () => {
     <div className="container mx-auto p-4">
       <header className="bg-gray-800 text-white p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
         <div className="flex items-center">
-          <h1 className="text-xl font-bold">My Web App</h1>
+          <h1 className="text-xl font-bold">La Mia App Web</h1>
         </div>
         <nav className="space-x-6">
           <Link to="/" className="text-white text-lg hover:text-gray-300">
-            <Button variant="link">Homepage</Button>
+            <Button variant="link">Pagina Iniziale</Button>
           </Link>
           <Link to="/servizi" className="text-white text-lg hover:text-gray-300">
             <Button variant="link">Servizi per te</Button>
@@ -41,79 +41,79 @@ const Iniziative = () => {
         <div className="space-y-4">
           <div>
             <h2 className="text-xl font-semibold">Iniziative</h2>
-            <p>Explore various initiatives and programs designed to support and empower individuals with disabilities.</p>
+            <p>Esplora varie iniziative e programmi progettati per supportare e potenziare le persone con disabilità.</p>
           </div>
           <div className="mt-4">
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger asChild>
-                <Button variant="primary">Create New Initiative</Button>
+                <Button variant="primary">Crea Nuova Iniziativa</Button>
               </DialogTrigger>
               <DialogContent className="max-h-[80vh] overflow-y-auto p-4">
                 <DialogHeader>
-                  <DialogTitle>Create New Initiative</DialogTitle>
+                  <DialogTitle>Crea Nuova Iniziativa</DialogTitle>
                 </DialogHeader>
                 <form className="space-y-4 p-4">
                   <div className="space-y-2">
-                    <Label htmlFor="title">Title of the Initiative</Label>
-                    <Input id="title" placeholder="Enter the title" />
+                    <Label htmlFor="title">Titolo dell'Iniziativa</Label>
+                    <Input id="title" placeholder="Inserisci il titolo" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="description">Detailed Description</Label>
-                    <Textarea id="description" placeholder="Enter the detailed description" />
+                    <Label htmlFor="description">Descrizione Dettagliata</Label>
+                    <Textarea id="description" placeholder="Inserisci la descrizione dettagliata" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="category">Category</Label>
+                    <Label htmlFor="category">Categoria</Label>
                     <Select>
                       <SelectTrigger>
-                        <SelectValue placeholder="Select category" />
+                        <SelectValue placeholder="Seleziona categoria" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="transportation">Transportation</SelectItem>
-                        <SelectItem value="tourism">Tourism</SelectItem>
-                        <SelectItem value="health">Health</SelectItem>
-                        <SelectItem value="education">Education</SelectItem>
-                        <SelectItem value="employment">Employment</SelectItem>
-                        <SelectItem value="social-services">Social Services</SelectItem>
+                        <SelectItem value="transportation">Trasporti</SelectItem>
+                        <SelectItem value="tourism">Turismo</SelectItem>
+                        <SelectItem value="health">Salute</SelectItem>
+                        <SelectItem value="education">Istruzione</SelectItem>
+                        <SelectItem value="employment">Occupazione</SelectItem>
+                        <SelectItem value="social-services">Servizi Sociali</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="start-date">Start Date</Label>
-                    <Input id="start-date" type="text" placeholder="YYYY-MM-DD" />
+                    <Label htmlFor="start-date">Data di Inizio</Label>
+                    <Input id="start-date" type="text" placeholder="Inserisci la data di inizio" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="end-date">End Date</Label>
-                    <Input id="end-date" type="text" placeholder="YYYY-MM-DD" />
+                    <Label htmlFor="end-date">Data di Fine</Label>
+                    <Input id="end-date" type="text" placeholder="Inserisci la data di fine" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="location">Location</Label>
-                    <Input id="location" placeholder="Enter the location" />
+                    <Label htmlFor="location">Luogo</Label>
+                    <Input id="location" placeholder="Inserisci il luogo" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="organizer">Organizer</Label>
-                    <Input id="organizer" placeholder="Enter the organizer's name" />
+                    <Label htmlFor="organizer">Organizzatore</Label>
+                    <Input id="organizer" placeholder="Inserisci il nome dell'organizzatore" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="organizer-contact">Organizer Contact Information</Label>
-                    <Input id="organizer-contact" placeholder="Enter the contact information" />
+                    <Label htmlFor="organizer-contact">Informazioni di Contatto dell'Organizzatore</Label>
+                    <Input id="organizer-contact" placeholder="Inserisci le informazioni di contatto" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="benefits">Benefits Offered</Label>
-                    <Textarea id="benefits" placeholder="Enter the benefits offered" />
+                    <Label htmlFor="benefits">Benefici Offerti</Label>
+                    <Textarea id="benefits" placeholder="Inserisci i benefici offerti" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="eligibility">Eligibility Requirements</Label>
-                    <Textarea id="eligibility" placeholder="Enter the eligibility requirements" />
+                    <Label htmlFor="eligibility">Requisiti di Idoneità</Label>
+                    <Textarea id="eligibility" placeholder="Inserisci i requisiti di idoneità" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="caregiver-discount">Caregiver Discount (if applicable)</Label>
-                    <Input id="caregiver-discount" placeholder="Enter the caregiver discount" />
+                    <Label htmlFor="caregiver-discount">Sconto per Assistente (se applicabile)</Label>
+                    <Input id="caregiver-discount" placeholder="Inserisci lo sconto per assistente" />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="supporting-docs">Supporting Documentation</Label>
+                    <Label htmlFor="supporting-docs">Documentazione di Supporto</Label>
                     <Input id="supporting-docs" type="file" />
                   </div>
-                  <Button type="submit">Create the Initiative</Button>
+                  <Button type="submit">Crea l'Iniziativa</Button>
                 </form>
               </DialogContent>
             </Dialog>
