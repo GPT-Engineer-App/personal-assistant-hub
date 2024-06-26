@@ -9,8 +9,23 @@ const AssistentePersonale = () => {
 
   const handleSend = () => {
     if (inputValue.trim()) {
-      setMessages([...messages, inputValue]);
+      const newMessages = [...messages, { text: inputValue, sender: "user" }];
+      const response = getResponse(inputValue);
+      setMessages([...newMessages, { text: response, sender: "bot" }]);
       setInputValue("");
+    }
+  };
+
+  const getResponse = (message) => {
+    const lowerCaseMessage = message.toLowerCase();
+    if (lowerCaseMessage.includes("ciao")) {
+      return "Ciao! Come posso aiutarti oggi?";
+    } else if (lowerCaseMessage.includes("come stai")) {
+      return "Sto bene, grazie! E tu?";
+    } else if (lowerCaseMessage.includes("aiuto")) {
+      return "Sono qui per aiutarti. Cosa ti serve?";
+    } else {
+      return "Ciao. Questa è una chat dimostrativa, puoi farmi domande su tutto quello che riguarda il portale In&Valid e io cercherò di aiutarti nel miglior modo possibile.";
     }
   };
 
@@ -40,8 +55,13 @@ const AssistentePersonale = () => {
         <h1 className="text-2xl mb-4">Assistente Personale</h1>
         <div className="chat-window border p-4 mb-4 h-96 overflow-y-scroll">
           {messages.map((message, index) => (
-            <div key={index} className="message mb-2 p-2 bg-gray-200 rounded">
-              {message}
+            <div
+              key={index}
+              className={`message mb-2 p-2 rounded ${
+                message.sender === "user" ? "bg-gray-200" : "bg-blue-200"
+              }`}
+            >
+              {message.text}
             </div>
           ))}
         </div>
