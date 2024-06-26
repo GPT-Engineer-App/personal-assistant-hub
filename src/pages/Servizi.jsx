@@ -29,20 +29,20 @@ const Servizi = () => {
     <div className="container mx-auto p-4">
       <header className="bg-gray-800 text-white p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
         <h1 className="text-xl">My Web App</h1>
-        <nav className="space-x-4">
-          <Link to="/" className="text-white">
+        <nav className="space-x-6">
+          <Link to="/" className="text-white text-lg hover:text-gray-300">
             <Button variant="link">Homepage</Button>
           </Link>
-          <Link to="/servizi" className="text-white">
+          <Link to="/servizi" className="text-white text-lg hover:text-gray-300">
             <Button variant="link">Servizi per te</Button>
           </Link>
-          <Link to="/iniziative" className="text-white">
+          <Link to="/iniziative" className="text-white text-lg hover:text-gray-300">
             <Button variant="link">Iniziative</Button>
           </Link>
-          <Link to="/profilo" className="text-white">
+          <Link to="/profilo" className="text-white text-lg hover:text-gray-300">
             <Button variant="link">Area Personale</Button>
           </Link>
-          <Link to="/assistente" className="text-white">
+          <Link to="/assistente" className="text-white text-lg hover:text-gray-300">
             <Button variant="link">Assistente Personale</Button>
           </Link>
         </nav>
