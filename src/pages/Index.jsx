@@ -18,7 +18,7 @@ const Index = () => {
             <Button variant="link">Iniziative</Button>
           </Link>
           <Link to="/profilo" className="text-white">
-            <Button variant="link">Profilo</Button>
+            <Button variant="link">Area Personale</Button>
           </Link>
           <Link to="/assistente" className="text-white">
             <Button variant="link">Assistente Personale</Button>
