@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { FaBriefcase, FaHeart, FaHospital, FaSchool, FaShuttleVan } from "react-icons/fa";
+import { FaBriefcase, FaHeart, FaHospital, FaSchool, FaShuttleVan, FaUser, FaClipboardList, FaSearch, FaMousePointer } from "react-icons/fa";
 import { Carousel } from "@/components/ui/carousel";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
