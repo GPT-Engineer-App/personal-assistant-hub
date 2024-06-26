@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { FaRegBuilding, FaRegHandshake, FaRegHeart, FaRegLightbulb, FaRegBriefcase } from "react-icons/fa";
+import { FaRegBuilding, FaRegHandshake, FaRegHeart, FaRegLightbulb, FaBriefcase } from "react-icons/fa";
 
 const testimonials = [
   {
@@ -89,7 +89,7 @@ const Servizi = () => {
           </AccordionItem>
           <AccordionItem value="employment-access">
             <AccordionTrigger>
-              <FaRegBriefcase className="mr-2" /> Employment Access
+              <FaBriefcase className="mr-2" /> Employment Access
             </AccordionTrigger>
             <AccordionContent>
               <p>Assistance with finding and applying for jobs, including job listings, resume building, and interview preparation, aimed at improving employment opportunities for people with disabilities.</p>
