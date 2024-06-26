@@ -32,8 +32,9 @@ const AssistentePersonale = () => {
   return (
     <div className="container mx-auto p-4">
       <header className="bg-gray-800 text-white p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
-        <div className="flex items-center">
-          <h1 className="text-xl font-bold">La Mia App Web</h1>
+        <div className="flex items-center space-x-4">
+          <img src="/path/to/logo.png" alt="Logo" className="h-8" />
+          <h1 className="text-xl font-bold">In&Valid</h1>
         </div>
         <nav className="space-x-6">
           <Link to="/" className="text-white text-lg hover:text-gray-300">
