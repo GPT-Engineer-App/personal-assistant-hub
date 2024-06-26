@@ -17,7 +17,7 @@ const Index = () => {
         </div>
         <nav className="space-x-6">
           <Link to="/" className="text-white text-lg hover:text-gray-300">
-            <Button variant="link">Homepage</Button>
+            <Button variant="link">Pagina Iniziale</Button>
           </Link>
           <Link to="/servizi" className="text-white text-lg hover:text-gray-300">
             <Button variant="link">Servizi per te</Button>
@@ -35,136 +35,136 @@ const Index = () => {
       </header>
       <main className="flex-grow flex flex-col items-center justify-center p-4">
         <section className="w-full bg-cover bg-center h-96 flex flex-col items-center justify-center text-white" style={{ backgroundImage: "url('/path/to/hero-image.jpg')" }}>
-          <h1 className="text-4xl font-bold mb-2">Empowering People with Disabilities</h1>
-          <p className="text-xl mb-4">Access a world of opportunities and support at your fingertips.</p>
+          <h1 className="text-4xl font-bold mb-2">Potenziare le Persone con Disabilità</h1>
+          <p className="text-xl mb-4">Accedi a un mondo di opportunità e supporto a portata di mano.</p>
           <div className="space-x-4">
-            <Button variant="primary" size="lg">Join Now</Button>
-            <Button variant="secondary" size="lg">Learn More</Button>
+            <Button variant="primary" size="lg">Iscriviti Ora</Button>
+            <Button variant="secondary" size="lg">Scopri di Più</Button>
           </div>
         </section>
         <section className="max-w-3xl w-full my-8">
           <Card>
             <CardHeader>
-              <CardTitle className="text-center text-3xl">Welcome to In&Valid Portal</CardTitle>
+              <CardTitle className="text-center text-3xl">Benvenuto nel Portale In&Valid</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-center mb-4">
-                In&Valid is dedicated to enhancing accessibility and inclusion for people with disabilities. Explore public and private initiatives, access essential services, and join a supportive community.
+                In&Valid è dedicato a migliorare l'accessibilità e l'inclusione per le persone con disabilità. Esplora iniziative pubbliche e private, accedi ai servizi essenziali e unisciti a una comunità di supporto.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col items-center">
                   <FaHospital className="text-4xl mb-2" />
-                  <p>Healthcare</p>
+                  <p>Assistenza Sanitaria</p>
                 </div>
                 <div className="flex flex-col items-center">
                   <FaShuttleVan className="text-4xl mb-2" />
-                  <p>Transportation</p>
+                  <p>Trasporti</p>
                 </div>
                 <div className="flex flex-col items-center">
                   <FaSchool className="text-4xl mb-2" />
-                  <p>Education</p>
+                  <p>Istruzione</p>
                 </div>
                 <div className="flex flex-col items-center">
                   <FaBriefcase className="text-4xl mb-2" />
-                  <p>Employment</p>
+                  <p>Occupazione</p>
                 </div>
                 <div className="flex flex-col items-center">
                   <FaHeart className="text-4xl mb-2" />
-                  <p>Social Services</p>
+                  <p>Servizi Sociali</p>
                 </div>
               </div>
             </CardContent>
           </Card>
         </section>
         <section className="max-w-3xl w-full my-8">
-          <h2 className="text-2xl mb-4">Featured Services</h2>
+          <h2 className="text-2xl mb-4">Servizi in Evidenza</h2>
           <div className="grid grid-cols-2 gap-4">
             <Card>
               <CardHeader>
                 <FaHospital className="text-4xl mb-2" />
-                <CardTitle>Healthcare</CardTitle>
+                <CardTitle>Assistenza Sanitaria</CardTitle>
               </CardHeader>
               <CardContent>
-                <p>Access to healthcare services and support.</p>
-                <Button variant="link">Learn More</Button>
+                <p>Accesso ai servizi sanitari e di supporto.</p>
+                <Button variant="link">Scopri di Più</Button>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
                 <FaShuttleVan className="text-4xl mb-2" />
-                <CardTitle>Transportation</CardTitle>
+                <CardTitle>Trasporti</CardTitle>
               </CardHeader>
               <CardContent>
-                <p>Transportation services tailored for people with disabilities.</p>
-                <Button variant="link">Learn More</Button>
+                <p>Servizi di trasporto su misura per le persone con disabilità.</p>
+                <Button variant="link">Scopri di Più</Button>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
                 <FaSchool className="text-4xl mb-2" />
-                <CardTitle>Education</CardTitle>
+                <CardTitle>Istruzione</CardTitle>
               </CardHeader>
               <CardContent>
-                <p>Educational programs and resources.</p>
-                <Button variant="link">Learn More</Button>
+                <p>Programmi educativi e risorse.</p>
+                <Button variant="link">Scopri di Più</Button>
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
                 <FaBriefcase className="text-4xl mb-2" />
-                <CardTitle>Employment</CardTitle>
+                <CardTitle>Occupazione</CardTitle>
               </CardHeader>
               <CardContent>
-                <p>Job opportunities and employment support.</p>
-                <Button variant="link">Learn More</Button>
+                <p>Opportunità di lavoro e supporto all'occupazione.</p>
+                <Button variant="link">Scopri di Più</Button>
               </CardContent>
             </Card>
           </div>
         </section>
         <section className="max-w-3xl w-full my-8">
-          <h2 className="text-2xl mb-4">How It Works</h2>
+          <h2 className="text-2xl mb-4">Come Funziona</h2>
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col items-center">
               <FaUser className="text-4xl mb-2" />
-              <p>Register your profile</p>
+              <p>Registrati</p>
             </div>
             <div className="flex flex-col items-center">
               <FaClipboardList className="text-4xl mb-2" />
-              <p>Choose your interests and needs</p>
+              <p>Scegli i tuoi interessi e bisogni</p>
             </div>
             <div className="flex flex-col items-center">
               <FaSearch className="text-4xl mb-2" />
-              <p>Discover initiatives and services</p>
+              <p>Scopri iniziative e servizi</p>
             </div>
             <div className="flex flex-col items-center">
               <FaMousePointer className="text-4xl mb-2" />
-              <p>Apply with a click</p>
+              <p>Candidati con un clic</p>
             </div>
           </div>
         </section>
         <section className="max-w-3xl w-full my-8">
-          <h2 className="text-2xl mb-4">Initiatives Spotlight</h2>
+          <h2 className="text-2xl mb-4">Iniziative in Evidenza</h2>
           <Carousel>
             <div className="carousel-item">
               <img src="/path/to/initiative1.jpg" alt="Initiative 1" />
               <div className="carousel-caption">
                 <h3>Initiative 1</h3>
-                <p>Short description of initiative 1.</p>
-                <Button variant="link">View Details</Button>
+                <p>Breve descrizione dell'iniziativa 1.</p>
+                <Button variant="link">Visualizza Dettagli</Button>
               </div>
             </div>
             <div className="carousel-item">
               <img src="/path/to/initiative2.jpg" alt="Initiative 2" />
               <div className="carousel-caption">
                 <h3>Initiative 2</h3>
-                <p>Short description of initiative 2.</p>
-                <Button variant="link">View Details</Button>
+                <p>Breve descrizione dell'iniziativa 2.</p>
+                <Button variant="link">Visualizza Dettagli</Button>
               </div>
             </div>
           </Carousel>
         </section>
         <section className="max-w-3xl w-full my-8">
-          <h2 className="text-2xl mb-4">Community Testimonials</h2>
+          <h2 className="text-2xl mb-4">Testimonianze della Comunità</h2>
           <Carousel>
             <div className="carousel-item">
               <Card>
@@ -181,7 +181,7 @@ const Index = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p>Testimonial text from user 1.</p>
+                  <p>Testimonianza dell'utente 1.</p>
                 </CardContent>
               </Card>
             </div>
@@ -200,14 +200,14 @@ const Index = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p>Testimonial text from user 2.</p>
+                  <p>Testimonianza dell'utente 2.</p>
                 </CardContent>
               </Card>
             </div>
           </Carousel>
         </section>
         <section className="max-w-3xl w-full my-8">
-          <h2 className="text-2xl mb-4">Latest News and Updates</h2>
+          <h2 className="text-2xl mb-4">Ultime Notizie e Aggiornamenti</h2>
           <div className="grid grid-cols-2 gap-4">
             <Card>
               <CardHeader>
@@ -215,8 +215,8 @@ const Index = () => {
                 <CardTitle>News Headline 1</CardTitle>
               </CardHeader>
               <CardContent>
-                <p>Short excerpt of news 1.</p>
-                <Button variant="link">Read More</Button>
+                <p>Breve estratto della notizia 1.</p>
+                <Button variant="link">Leggi di Più</Button>
               </CardContent>
             </Card>
             <Card>
@@ -225,8 +225,8 @@ const Index = () => {
                 <CardTitle>News Headline 2</CardTitle>
               </CardHeader>
               <CardContent>
-                <p>Short excerpt of news 2.</p>
-                <Button variant="link">Read More</Button>
+                <p>Breve estratto della notizia 2.</p>
+                <Button variant="link">Leggi di Più</Button>
               </CardContent>
             </Card>
           </div>
@@ -235,16 +235,16 @@ const Index = () => {
       <footer className="bg-gray-800 text-white p-4">
         <div className="max-w-3xl mx-auto grid grid-cols-2 gap-4">
           <div>
-            <h3 className="text-lg mb-2">Quick Links</h3>
+            <h3 className="text-lg mb-2">Link Rapidi</h3>
             <ul>
-              <li><Link to="/about" className="hover:underline">About Us</Link></li>
-              <li><Link to="/contact" className="hover:underline">Contact Us</Link></li>
-              <li><Link to="/privacy" className="hover:underline">Privacy Policy</Link></li>
-              <li><Link to="/terms" className="hover:underline">Terms of Service</Link></li>
+              <li><Link to="/about" className="hover:underline">Chi Siamo</Link></li>
+              <li><Link to="/contact" className="hover:underline">Contattaci</Link></li>
+              <li><Link to="/privacy" className="hover:underline">Politica sulla Privacy</Link></li>
+              <li><Link to="/terms" className="hover:underline">Termini di Servizio</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg mb-2">Follow Us</h3>
+            <h3 className="text-lg mb-2">Seguici</h3>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <img src="/path/to/facebook-icon.png" alt="Facebook" className="h-6" />
@@ -259,15 +259,15 @@ const Index = () => {
                 <img src="/path/to/instagram-icon.png" alt="Instagram" className="h-6" />
               </a>
             </div>
-            <h3 className="text-lg mt-4 mb-2">Newsletter Signup</h3>
+            <h3 className="text-lg mt-4 mb-2">Iscriviti alla Newsletter</h3>
             <form>
-              <input type="email" placeholder="Your email" className="p-2 w-full mb-2" />
-              <Button type="submit" variant="primary" size="sm">Subscribe</Button>
+              <input type="email" placeholder="La tua email" className="p-2 w-full mb-2" />
+              <Button type="submit" variant="primary" size="sm">Iscriviti</Button>
             </form>
           </div>
         </div>
         <div className="text-center mt-4">
-          <p>Contact us at <a href="mailto:info@invalid.com" className="underline">info@invalid.com</a> or call us at (123) 456-7890</p>
+          <p>Contattaci a <a href="mailto:info@invalid.com" className="underline">info@invalid.com</a> o chiamaci al (123) 456-7890</p>
         </div>
       </footer>
     </div>

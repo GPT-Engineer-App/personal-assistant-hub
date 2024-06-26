@@ -33,11 +33,11 @@ const AssistentePersonale = () => {
     <div className="container mx-auto p-4">
       <header className="bg-gray-800 text-white p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
         <div className="flex items-center">
-          <h1 className="text-xl font-bold">My Web App</h1>
+          <h1 className="text-xl font-bold">La Mia App Web</h1>
         </div>
         <nav className="space-x-6">
           <Link to="/" className="text-white text-lg hover:text-gray-300">
-            <Button variant="link">Homepage</Button>
+            <Button variant="link">Pagina Iniziale</Button>
           </Link>
           <Link to="/servizi" className="text-white text-lg hover:text-gray-300">
             <Button variant="link">Servizi per te</Button>
@@ -71,10 +71,10 @@ const AssistentePersonale = () => {
           <Input
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
-            placeholder="Type your message..."
+            placeholder="Scrivi il tuo messaggio..."
             className="flex-grow mr-2"
           />
-          <Button onClick={handleSend}>Send</Button>
+          <Button onClick={handleSend}>Invia</Button>
         </div>
       </div>
     </div>

@@ -33,7 +33,7 @@ const Servizi = () => {
         </div>
         <nav className="space-x-6">
           <Link to="/" className="text-white text-lg hover:text-gray-300">
-            <Button variant="link">Homepage</Button>
+            <Button variant="link">Pagina Iniziale</Button>
           </Link>
           <Link to="/servizi" className="text-white text-lg hover:text-gray-300">
             <Button variant="link">Servizi per te</Button>
@@ -51,56 +51,56 @@ const Servizi = () => {
       </header>
       <div className="pt-16">
         <h1 className="text-2xl mb-4">Servizi per te</h1>
-        <Input placeholder="Search services..." className="mb-4" />
+        <Input placeholder="Cerca servizi..." className="mb-4" />
         <Accordion type="single" collapsible>
           <AccordionItem value="public-initiatives">
             <AccordionTrigger>
-              <FaRegBuilding className="mr-2" /> Public Initiatives
+              <FaRegBuilding className="mr-2" /> Iniziative Pubbliche
             </AccordionTrigger>
             <AccordionContent>
-              <p>Access to information and services related to public benefits, including disability allowances, bonuses, and other government-provided support.</p>
-              <Button variant="outline" className="mt-2">Learn More</Button>
+              <p>Accesso a informazioni e servizi relativi ai benefici pubblici, inclusi assegni di disabilità, bonus e altri supporti forniti dal governo.</p>
+              <Button variant="outline" className="mt-2">Scopri di Più</Button>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="private-initiatives">
             <AccordionTrigger>
-              <FaRegHandshake className="mr-2" /> Private Initiatives
+              <FaRegHandshake className="mr-2" /> Iniziative Private
             </AccordionTrigger>
             <AccordionContent>
-              <p>Information and access to private sector initiatives such as cultural events, sports activities, hospitality services, and transportation options that cater to people with disabilities.</p>
-              <Button variant="outline" className="mt-2">Learn More</Button>
+              <p>Informazioni e accesso a iniziative del settore privato come eventi culturali, attività sportive, servizi di ospitalità e opzioni di trasporto per persone con disabilità.</p>
+              <Button variant="outline" className="mt-2">Scopri di Più</Button>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="counseling-support">
             <AccordionTrigger>
-              <FaRegHeart className="mr-2" /> Counseling and Psychological Support
+              <FaRegHeart className="mr-2" /> Consulenza e Supporto Psicologico
             </AccordionTrigger>
             <AccordionContent>
-              <p>Access to counseling services and psychological support to help individuals cope with their disabilities and improve their mental well-being.</p>
-              <Button variant="outline" className="mt-2">Learn More</Button>
+              <p>Accesso a servizi di consulenza e supporto psicologico per aiutare le persone a gestire le loro disabilità e migliorare il loro benessere mentale.</p>
+              <Button variant="outline" className="mt-2">Scopri di Più</Button>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="training-education">
             <AccordionTrigger>
-              <FaRegLightbulb className="mr-2" /> Training and Education
+              <FaRegLightbulb className="mr-2" /> Formazione e Istruzione
             </AccordionTrigger>
             <AccordionContent>
-              <p>Resources and opportunities for training and educational programs to enhance skills and knowledge, tailored specifically for people with disabilities.</p>
-              <Button variant="outline" className="mt-2">Learn More</Button>
+              <p>Risorse e opportunità per programmi di formazione e istruzione per migliorare le competenze e le conoscenze, specificamente per le persone con disabilità.</p>
+              <Button variant="outline" className="mt-2">Scopri di Più</Button>
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="employment-access">
             <AccordionTrigger>
-              <FaBriefcase className="mr-2" /> Employment Access
+              <FaBriefcase className="mr-2" /> Accesso all'Occupazione
             </AccordionTrigger>
             <AccordionContent>
-              <p>Assistance with finding and applying for jobs, including job listings, resume building, and interview preparation, aimed at improving employment opportunities for people with disabilities.</p>
-              <Button variant="outline" className="mt-2">Learn More</Button>
+              <p>Assistenza nella ricerca e candidatura per lavori, inclusi elenchi di lavoro, creazione di curriculum e preparazione per colloqui, mirata a migliorare le opportunità di lavoro per le persone con disabilità.</p>
+              <Button variant="outline" className="mt-2">Scopri di Più</Button>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
         <Separator className="my-6" />
-        <h2 className="text-xl mb-4">User Testimonials</h2>
+        <h2 className="text-xl mb-4">Testimonianze degli Utenti</h2>
         <div className="space-y-4">
           {testimonials.map((testimonial, index) => (
             <Card key={index}>
