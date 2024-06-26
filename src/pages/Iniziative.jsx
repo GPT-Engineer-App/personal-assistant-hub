@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Calendar } from "@/components/ui/calendar";
+
 const Iniziative = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="container mx-auto p-4">
       <header className="bg-gray-800 text-white p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
@@ -33,7 +41,79 @@ const Iniziative = () => {
             <p>Explore various initiatives and programs designed to support and empower individuals with disabilities.</p>
           </div>
           <div className="mt-4">
-            <Button variant="primary">Create New Initiative</Button>
+            <Dialog open={open} onOpenChange={setOpen}>
+              <DialogTrigger asChild>
+                <Button variant="primary">Create New Initiative</Button>
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>Create New Initiative</DialogTitle>
+                </DialogHeader>
+                <form className="space-y-4">
+                  <div>
+                    <Label htmlFor="title">Title of the Initiative</Label>
+                    <Input id="title" placeholder="Enter the title" />
+                  </div>
+                  <div>
+                    <Label htmlFor="description">Detailed Description</Label>
+                    <Textarea id="description" placeholder="Enter the detailed description" />
+                  </div>
+                  <div>
+                    <Label htmlFor="category">Category</Label>
+                    <Select>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select category" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="transportation">Transportation</SelectItem>
+                        <SelectItem value="tourism">Tourism</SelectItem>
+                        <SelectItem value="health">Health</SelectItem>
+                        <SelectItem value="education">Education</SelectItem>
+                        <SelectItem value="employment">Employment</SelectItem>
+                        <SelectItem value="social-services">Social Services</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <div>
+                    <Label htmlFor="start-date">Start Date</Label>
+                    <Calendar id="start-date" />
+                  </div>
+                  <div>
+                    <Label htmlFor="end-date">End Date</Label>
+                    <Calendar id="end-date" />
+                  </div>
+                  <div>
+                    <Label htmlFor="location">Location</Label>
+                    <Input id="location" placeholder="Enter the location" />
+                  </div>
+                  <div>
+                    <Label htmlFor="organizer">Organizer</Label>
+                    <Input id="organizer" placeholder="Enter the organizer's name" />
+                  </div>
+                  <div>
+                    <Label htmlFor="organizer-contact">Organizer Contact Information</Label>
+                    <Input id="organizer-contact" placeholder="Enter the contact information" />
+                  </div>
+                  <div>
+                    <Label htmlFor="benefits">Benefits Offered</Label>
+                    <Textarea id="benefits" placeholder="Enter the benefits offered" />
+                  </div>
+                  <div>
+                    <Label htmlFor="eligibility">Eligibility Requirements</Label>
+                    <Textarea id="eligibility" placeholder="Enter the eligibility requirements" />
+                  </div>
+                  <div>
+                    <Label htmlFor="caregiver-discount">Caregiver Discount (if applicable)</Label>
+                    <Input id="caregiver-discount" placeholder="Enter the caregiver discount" />
+                  </div>
+                  <div>
+                    <Label htmlFor="supporting-docs">Supporting Documentation</Label>
+                    <Input id="supporting-docs" type="file" />
+                  </div>
+                  <Button type="submit">Create the Initiative</Button>
+                </form>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </div>
