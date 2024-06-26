@@ -1,6 +1,27 @@
 import React from "react";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+
+const testimonials = [
+  {
+    name: "Mario Rossi",
+    role: "User",
+    testimonial: "Grazie a questo portale ho trovato un lavoro che mi soddisfa e mi permette di vivere serenamente.",
+    image: "https://via.placeholder.com/150"
+  },
+  {
+    name: "Luca Bianchi",
+    role: "User",
+    testimonial: "Le iniziative private mi hanno permesso di partecipare a eventi culturali che non avrei mai scoperto altrimenti.",
+    image: "https://via.placeholder.com/150"
+  }
+];
 
 const Servizi = () => {
   return (
@@ -27,27 +48,66 @@ const Servizi = () => {
       </header>
       <div className="pt-16">
         <h1 className="text-2xl mb-4">Servizi per te</h1>
+        <Input placeholder="Search services..." className="mb-4" />
+        <Accordion type="single" collapsible>
+          <AccordionItem value="public-initiatives">
+            <AccordionTrigger>Public Initiatives</AccordionTrigger>
+            <AccordionContent>
+              <p>Access to information and services related to public benefits, including disability allowances, bonuses, and other government-provided support.</p>
+              <Button variant="outline" className="mt-2">Learn More</Button>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="private-initiatives">
+            <AccordionTrigger>Private Initiatives</AccordionTrigger>
+            <AccordionContent>
+              <p>Information and access to private sector initiatives such as cultural events, sports activities, hospitality services, and transportation options that cater to people with disabilities.</p>
+              <Button variant="outline" className="mt-2">Learn More</Button>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="counseling-support">
+            <AccordionTrigger>Counseling and Psychological Support</AccordionTrigger>
+            <AccordionContent>
+              <p>Access to counseling services and psychological support to help individuals cope with their disabilities and improve their mental well-being.</p>
+              <Button variant="outline" className="mt-2">Learn More</Button>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="training-education">
+            <AccordionTrigger>Training and Education</AccordionTrigger>
+            <AccordionContent>
+              <p>Resources and opportunities for training and educational programs to enhance skills and knowledge, tailored specifically for people with disabilities.</p>
+              <Button variant="outline" className="mt-2">Learn More</Button>
+            </AccordionContent>
+          </AccordionItem>
+          <AccordionItem value="employment-access">
+            <AccordionTrigger>Employment Access</AccordionTrigger>
+            <AccordionContent>
+              <p>Assistance with finding and applying for jobs, including job listings, resume building, and interview preparation, aimed at improving employment opportunities for people with disabilities.</p>
+              <Button variant="outline" className="mt-2">Learn More</Button>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+        <Separator className="my-6" />
+        <h2 className="text-xl mb-4">User Testimonials</h2>
         <div className="space-y-4">
-          <div>
-            <h2 className="text-xl font-semibold">Public Initiatives</h2>
-            <p>Access to information and services related to public benefits, including disability allowances, bonuses, and other government-provided support.</p>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">Private Initiatives</h2>
-            <p>Information and access to private sector initiatives such as cultural events, sports activities, hospitality services, and transportation options that cater to people with disabilities.</p>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">Counseling and Psychological Support</h2>
-            <p>Access to counseling services and psychological support to help individuals cope with their disabilities and improve their mental well-being.</p>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">Training and Education</h2>
-            <p>Resources and opportunities for training and educational programs to enhance skills and knowledge, tailored specifically for people with disabilities.</p>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold">Employment Access</h2>
-            <p>Assistance with finding and applying for jobs, including job listings, resume building, and interview preparation, aimed at improving employment opportunities for people with disabilities.</p>
-          </div>
+          {testimonials.map((testimonial, index) => (
+            <Card key={index}>
+              <CardHeader>
+                <div className="flex items-center space-x-4">
+                  <Avatar>
+                    <AvatarImage src={testimonial.image} />
+                    <AvatarFallback>{testimonial.name[0]}</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <CardTitle>{testimonial.name}</CardTitle>
+                    <Badge>{testimonial.role}</Badge>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p>{testimonial.testimonial}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </div>
