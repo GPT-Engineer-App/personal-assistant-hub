@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   return (
     <div className="h-screen w-screen flex flex-col">
-      <header className="bg-gray-800 text-white p-4 flex justify-between items-center">
+      <header className="bg-gray-800 text-white p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
         <h1 className="text-xl">My Web App</h1>
         <nav className="space-x-4">
           <Link to="/" className="text-white">
