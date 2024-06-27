@@ -34,7 +34,7 @@ const Index = () => {
         </nav>
       </header>
       <main className="flex-grow flex flex-col items-center justify-center p-4">
-        <section className="w-full bg-cover bg-center h-96 flex flex-col items-center justify-center text-white">
+        <section className="w-full bg-cover bg-center h-96 flex flex-col items-center justify-center text-white" style={{ backgroundImage: "url('/path/to/hero-image.jpg')" }}>
           <h1 className="text-4xl font-bold mb-2">Potenziare le Persone con Disabilità</h1>
           <p className="text-xl mb-4">Accedi a un mondo di opportunità e supporto a portata di mano.</p>
           <div className="space-x-4">
