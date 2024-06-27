@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { FaBriefcase, FaHeart, FaHospital, FaSchool, FaShuttleVan, FaUser, FaClipboardList, FaSearch, FaMousePointer } from "react-icons/fa";
 import { Carousel } from "@/components/ui/carousel";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 
 const Index = () => {
@@ -13,7 +13,6 @@ const Index = () => {
     <div className="h-screen w-screen flex flex-col">
       <header className="bg-green-600 text-white p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-50">
         <div className="flex items-center space-x-4">
-          <img src="/path/to/logo.png" alt="Logo" className="h-8" />
           <h1 className="text-xl font-bold">In&Valid</h1>
         </div>
         <nav className="space-x-6">
@@ -35,7 +34,7 @@ const Index = () => {
         </nav>
       </header>
       <main className="flex-grow flex flex-col items-center justify-center p-4">
-        <section className="w-full bg-cover bg-center h-96 flex flex-col items-center justify-center text-white" style={{ backgroundImage: "url('/path/to/hero-image.jpg')" }}>
+        <section className="w-full bg-cover bg-center h-96 flex flex-col items-center justify-center text-white">
           <h1 className="text-4xl font-bold mb-2">Potenziare le Persone con Disabilità</h1>
           <p className="text-xl mb-4">Accedi a un mondo di opportunità e supporto a portata di mano.</p>
           <div className="space-x-4">
@@ -147,7 +146,6 @@ const Index = () => {
           <h2 className="text-2xl mb-4">Iniziative in Evidenza</h2>
           <Carousel>
             <div className="carousel-item">
-              <img src="/path/to/initiative1.jpg" alt="Initiative 1" />
               <div className="carousel-caption">
                 <h3>Initiative 1</h3>
                 <p>Breve descrizione dell'iniziativa 1.</p>
@@ -155,7 +153,6 @@ const Index = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <img src="/path/to/initiative2.jpg" alt="Initiative 2" />
               <div className="carousel-caption">
                 <h3>Initiative 2</h3>
                 <p>Breve descrizione dell'iniziativa 2.</p>
@@ -172,7 +169,6 @@ const Index = () => {
                 <CardHeader>
                   <div className="flex items-center space-x-4">
                     <Avatar>
-                      <AvatarImage src="/path/to/user1.jpg" />
                       <AvatarFallback>U1</AvatarFallback>
                     </Avatar>
                     <div>
@@ -191,7 +187,6 @@ const Index = () => {
                 <CardHeader>
                   <div className="flex items-center space-x-4">
                     <Avatar>
-                      <AvatarImage src="/path/to/user2.jpg" />
                       <AvatarFallback>U2</AvatarFallback>
                     </Avatar>
                     <div>
@@ -212,7 +207,6 @@ const Index = () => {
           <div className="grid grid-cols-2 gap-4">
             <Card>
               <CardHeader>
-                <img src="/path/to/news1.jpg" alt="News 1" className="w-full h-32 object-cover mb-2" />
                 <CardTitle>News Headline 1</CardTitle>
               </CardHeader>
               <CardContent>
@@ -222,7 +216,6 @@ const Index = () => {
             </Card>
             <Card>
               <CardHeader>
-                <img src="/path/to/news2.jpg" alt="News 2" className="w-full h-32 object-cover mb-2" />
                 <CardTitle>News Headline 2</CardTitle>
               </CardHeader>
               <CardContent>
